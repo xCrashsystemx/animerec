@@ -1,8 +1,16 @@
 
-# Created by https://www.gitignore.io/api/vuejs,laravel,windows,phpstorm,jetbrains,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=vuejs,laravel,windows,phpstorm,jetbrains,visualstudiocode
+# Created by https://www.gitignore.io/api/vue,vuejs,laravel,windows,composer,phpstorm,jetbrains+all,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=vue,vuejs,laravel,windows,composer,phpstorm,jetbrains+all,visualstudiocode
 
-### JetBrains ###
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -72,26 +80,23 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### JetBrains Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+### JetBrains+all Patch ###
+# Ignores the whole .idea folder and all .iml files
+# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
+.idea/
+
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
 
 # Sonarlint plugin
-.idea/**/sonarlint/
-
-# SonarQube Plugin
-.idea/**/sonarIssues.xml
-
-# Markdown Navigator plugin
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator/
+.idea/sonarlint
 
 ### Laravel ###
-/vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -161,10 +166,14 @@ Homestead.json
 # *.ipr
 
 # Sonarlint plugin
+.idea/**/sonarlint/
 
 # SonarQube Plugin
+.idea/**/sonarIssues.xml
 
 # Markdown Navigator plugin
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator/
 
 ### VisualStudioCode ###
 .vscode/*
@@ -176,6 +185,22 @@ Homestead.json
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+### Vue ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
 
 ### Vuejs ###
 # Recommended template: Node.gitignore
@@ -208,4 +233,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/vuejs,laravel,windows,phpstorm,jetbrains,visualstudiocode
+# End of https://www.gitignore.io/api/vue,vuejs,laravel,windows,composer,phpstorm,jetbrains+all,visualstudiocode
